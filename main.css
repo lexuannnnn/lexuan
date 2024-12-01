@@ -37,6 +37,7 @@ header.navbar nav ul li a:hover {
 
 }
 img {
+    padding: 20px;
     border-radius: 10px;
     max-width: 100%;
 }
@@ -70,32 +71,35 @@ img {
 h1 {
     padding: 10px;
 }
-h3{ 
+h3 { 
     padding: 10px;
     
 }
+p {
+    padding: 10px;
+}
 
 .about-section {
-    display: flex; /* Use flexbox for the container */
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center items horizontally */
-    justify-content: center; /* Center items vertically */
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin: 20px;
-    gap: 40px; /* Space between each `.about-item` */
+    gap: 40px;
 }
 
 .about-item {
-    display: flex; /* Use flexbox for each group */
-    align-items: center; /* Align items vertically */
-    justify-content: center; /* Center each group horizontally */
-    gap: 20px; /* Space between image and text */
-    flex-wrap: wrap; /* Allow wrapping for smaller screens */
-    width: 100%; /* Ensure items span the full width */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
 .about-item .image {
     display: block;
-    width: 50%; /* Adjust image width */
+    width: 50%;
 }
 
 .about-item .image img {
@@ -106,12 +110,12 @@ h3{
 
 .about-item .text {
     flex: 1;
-    max-width: 50%; /* Ensure the text takes up the remaining space */
-    text-align: center; /* Center text within its container */
+    max-width: 50%;
+    text-align: center;
 }
 
 .about-item.reverse {
-    flex-direction: row-reverse; /* Reverse layout for alternating items */
+    flex-direction: row-reverse;
 }
 
 .about-item .text h2 {
@@ -122,4 +126,11 @@ h3{
 .about-item .text p {
     font-size: 16px;
     color: #333;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
